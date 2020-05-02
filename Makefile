@@ -26,7 +26,7 @@ test:
 	php artisan test
 
 lint:
-	composer phpcs app/ tests/
+	composer run-script phpcs -- --standard=PSR2 app/ config/ routes/ tests/
 
 lint-fix:
-	composer phpcbf app/ tests/
+	composer run-script phpcbf -- --standart=PSR2 app/ config/ routes/ tests/
