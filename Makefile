@@ -32,3 +32,6 @@ lint:
 
 lint-fix:
 	composer run-script phpcbf -- --standart=PSR2 app/ config/ routes/ tests/
+
+sql-start:
+	sudo service postgresql start
