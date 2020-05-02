@@ -9,6 +9,10 @@ setup:
 	php artisan db:seed
 	npm install
 
+setup-gh:
+	composer install
+	npm install
+
 watch:
 	npm run watch
 

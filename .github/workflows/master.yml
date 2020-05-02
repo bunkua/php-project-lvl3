@@ -18,7 +18,7 @@ jobs:
         uses: StephaneBour/actions-php-security-checker@1.0
 
       - name: Setup project
-        run: make setup
+        run: make setup-gh
 
       - name: Check lint
         run: make lint
