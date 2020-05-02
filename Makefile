@@ -22,7 +22,7 @@ test:
 	php artisan test
 
 lint:
-	phpcs .
+	composer phpcs app/ tests/
 
 lint-fix:
-	phpcbf .
+	composer phpcbf app/ tests/
