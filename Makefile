@@ -11,6 +11,8 @@ setup:
 
 setup-gh:
 	composer install
+	cp -n .env.example .env|| true
+	php artisan key:gen --ansi
 	npm install
 
 watch:
